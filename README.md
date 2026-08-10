@@ -40,7 +40,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 Download a lightweight model
 ```bash
 
-ollama pull qwen2.5:7b-q4_K_M
+ollama pull qwen2.5:7b
 ```
 Clone the AIR repository
 ``` bash
@@ -58,7 +58,7 @@ pip install -e .
 Launch AIR
 ```bash
 
-air --model ollama/qwen2.5:7b-q4_K_M
+air --model ollama/qwen2.5:7b
 ```
 You will enter interactive mode and can start typing requests.
 

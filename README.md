@@ -70,7 +70,7 @@ Default Configuration (Optional)
 To avoid specifying the model every time, create a file ~/.air.conf.yml with the following content:
 ```yaml
 
-model: ollama/qwen2.5:7b-q4_K_M
+model: ollama pull qwen2.5:7b
 check-update: false
 show-model-warnings: false
 ```

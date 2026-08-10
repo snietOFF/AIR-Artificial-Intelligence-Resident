@@ -9,7 +9,6 @@
 AIR is a command-line tool that brings a powerful AI assistant directly into your terminal.  
 It works **completely offline**, using local language models through [Ollama](https://ollama.com).
 
-The project is a fork of the excellent [Aider](https://github.com/paul-gauthier/aider), rebuilt for those who value privacy and full control over their tools.
 
 ---
 

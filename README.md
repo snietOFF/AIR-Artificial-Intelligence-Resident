@@ -29,6 +29,50 @@ AIR is designed for developers who want a capable, independent AI assistant with
 
 ## Installation
 
+
+
+
 ### 1. Install Ollama
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
+
+```
+Download a lightweight model
+```bash
+
+ollama pull qwen2.5:7b-q4_K_M
+```
+Clone the AIR repository
+``` bash
+
+git clone https://github.com/snietOFF/AIR-Artificial-Intelligence-Resident.git
+cd AIR-Artificial-Intelligence-Resident
+```
+Create a virtual environment and install dependencies
+```bash
+
+python3 -m venv venv
+source venv/bin/activate
+pip install -e .
+```
+Launch AIR
+```bash
+
+air --model ollama/qwen2.5:7b-q4_K_M
+```
+You will enter interactive mode and can start typing requests.
+Default Configuration (Optional)
+
+To avoid specifying the model every time, create a file ~/.air.conf.yml with the following content:
+```yaml
+
+model: ollama/qwen2.5:7b-q4_K_M
+check-update: false
+show-model-warnings: false
+```
+Now the "air" command will automatically use this model.
+
+
+License
+
+Apache License 2.0. Free to use, modify, and distribute.

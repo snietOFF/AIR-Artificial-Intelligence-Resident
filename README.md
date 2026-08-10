@@ -61,6 +61,10 @@ Launch AIR
 air --model ollama/qwen2.5:7b-q4_K_M
 ```
 You will enter interactive mode and can start typing requests.
+
+---
+
+
 Default Configuration (Optional)
 
 To avoid specifying the model every time, create a file ~/.air.conf.yml with the following content:
@@ -70,9 +74,5 @@ model: ollama/qwen2.5:7b-q4_K_M
 check-update: false
 show-model-warnings: false
 ```
-Now the "air" command will automatically use this model.
+Now the ```air``` command will automatically use this model.
 
-
-License
-
-Apache License 2.0. Free to use, modify, and distribute.

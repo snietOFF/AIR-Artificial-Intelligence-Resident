@@ -1,50 +1,34 @@
-# AIR – Резидент Искусственного Интеллекта
+# AIR – Artificial Intelligence Resident
 
-*Полностью автономный AI-помощник для вашего терминала.*
+*Fully offline AI assistant for your terminal.*
 
 ---
 
-## Установка (скопируйте и выполните эти команды)
+## About
 
-1. Установите Ollama:
+AIR is a command-line tool that brings a powerful AI assistant directly into your terminal.  
+It works **completely offline**, using local language models through [Ollama](https://ollama.com).
 
+The project is a fork of the excellent [Aider](https://github.com/paul-gauthier/aider), rebuilt for those who value privacy and full control over their tools.
+
+---
+
+## What AIR Can Do
+
+- Write and refactor code (Python, JS, Rust, Go, C++, Ruby, and many others)
+- Execute terminal commands and explain their output
+- Automatically create meaningful Git commits for AI-made changes
+- Read, create, and edit any text file on your system
+- Solve math and logic problems, from arithmetic to complex formulas
+- Build a map of your codebase and give context-aware answers
+- Communicate in English, Russian, and other languages
+
+AIR is designed for developers who want a capable, independent AI assistant without monthly fees or cloud dependencies.
+
+---
+
+## Installation
+
+### 1. Install Ollama
+```bash
 curl -fsSL https://ollama.com/install.sh | sh
-
-2. Скачайте модель:
-
-ollama pull qwen2.5:7b-q4_K_M
-
-3. Клонируйте репозиторий AIR:
-
-git clone https://github.com/snietOFF/AIR-Artificial-Intelligence-Resident.git
-cd AIR-Artificial-Intelligence-Resident
-
-4. Создайте виртуальное окружение и установите AIR:
-
-python3 -m venv venv
-source venv/bin/activate
-pip install -e .
-
-5. Запустите AIR:
-
-air --model ollama/qwen2.5:7b-q4_K_M
-
-После этой команды вы попадёте в интерактивный режим.
-
----
-
-## Настройка по умолчанию
-
-Создайте файл ~/.air.conf.yml со строками:
-
-model: ollama/qwen2.5:7b-q4_K_M
-check-update: false
-show-model-warnings: false
-
-Теперь команда air будет запускаться с этой моделью автоматически.
-
----
-
-## Лицензия
-
-Apache License 2.0. Свободное использование, изменение и распространение.

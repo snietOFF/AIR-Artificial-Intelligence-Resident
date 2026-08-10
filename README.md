@@ -1,52 +1,50 @@
-# AIR – Artificial Intelligence Resident
+# AIR – Резидент Искусственного Интеллекта
 
-<p align="center">
-  <em>Fully offline AI assistant for your terminal.</em>
-</p>
+*Полностью автономный AI-помощник для вашего терминала.*
 
 ---
 
-## About the project
+## Установка (скопируйте и выполните эти команды)
 
-AIR is a command-line tool that brings a powerful AI assistant directly into your terminal.  
-It works **completely offline**, using local language models through [Ollama](https://ollama.com).
+1. Установите Ollama:
 
-The project is a fork of the excellent [Aider](https://github.com/paul-gauthier/aider), rebuilt for those who care about privacy and want full control over their tools.
+curl -fsSL https://ollama.com/install.sh | sh
 
----
+2. Скачайте модель:
 
-## Why AIR
-
-- **No internet required** – everything runs locally on your machine.
-- **Local models** – uses Ollama to run Qwen 2.5, Llama 3, DeepSeek and many other open models.
-- **Terminal-first** – chat with the AI just like you would with a colleague in the command line.
-- **Real tools** – the agent can read, edit and write files, execute shell commands, work with Git, perform calculations and more.
-- **Open source** – licensed under Apache 2.0, free to modify and distribute.
-
----
-
-## What AIR can do
-
-- **Write and refactor code** – works with Python, JavaScript, Rust, Go, C++, Ruby and dozens of other languages.
-- **Automate terminal tasks** – run commands and get explanations in the same session.
-- **Manage Git repositories** – automatically create meaningful commits for AI-made changes.
-- **Handle files** – create, read and modify any text-based file on your system.
-- **Solve math and logic problems** – from simple arithmetic to complex formulas.
-- **Understand your codebase** – builds a map of your project and uses it to give context-aware answers.
-- **Communicate in multiple languages** – English, Russian, and many others are supported.
-
-AIR is designed for developers who want a capable, independent AI assistant without monthly fees or cloud dependencies.
-
----
-
-## Installation
-
-### Prerequisites
-
-- **Python 3.10** or newer
-- **Ollama** – installation instructions at [ollama.com](https://ollama.com)
-
-After installing Ollama, download a lightweight model:
-
-```bash
 ollama pull qwen2.5:7b-q4_K_M
+
+3. Клонируйте репозиторий AIR:
+
+git clone https://github.com/snietOFF/AIR-Artificial-Intelligence-Resident.git
+cd AIR-Artificial-Intelligence-Resident
+
+4. Создайте виртуальное окружение и установите AIR:
+
+python3 -m venv venv
+source venv/bin/activate
+pip install -e .
+
+5. Запустите AIR:
+
+air --model ollama/qwen2.5:7b-q4_K_M
+
+После этой команды вы попадёте в интерактивный режим.
+
+---
+
+## Настройка по умолчанию
+
+Создайте файл ~/.air.conf.yml со строками:
+
+model: ollama/qwen2.5:7b-q4_K_M
+check-update: false
+show-model-warnings: false
+
+Теперь команда air будет запускаться с этой моделью автоматически.
+
+---
+
+## Лицензия
+
+Apache License 2.0. Свободное использование, изменение и распространение.

@@ -50,10 +50,10 @@ cd AIR-Artificial-Intelligence-Resident
 Create a virtual environment and install dependencies
 ```bash
 
-python3 -m venv venv
+python3 -m venv venv --copies
 source venv/bin/activate
-python -m ensurepip --upgrade
-pip install -e 
+python -m pip install --upgrade pip
+pip install -e .
 ```
 Launch AIR
 ```bash

@@ -45,11 +45,11 @@ Clone the AIR repository
 ``` bash
 
 git clone https://github.com/snietOFF/AIR-Artificial-Intelligence-Resident.git
-cd AIR-Artificial-Intelligence-Resident
+
 ```
 Install AIR using pipx
 ```bash
-sudo apt install pipx -y
+
 pipx ensurepath
 source ~/.bashrc
 pipx install git+https://github.com/snietOFF/AIR-Artificial-Intelligence-Resident.git

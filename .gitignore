@@ -21,3 +21,5 @@ tmp.benchmarks/
 venv/
 venv/
 venv/
+air.egg-info/
+air/_version.py

@@ -47,13 +47,12 @@ Clone the AIR repository
 git clone https://github.com/snietOFF/AIR-Artificial-Intelligence-Resident.git
 cd AIR-Artificial-Intelligence-Resident
 ```
-Create a virtual environment and install dependencies
+Install AIR using pipx
 ```bash
-
-python3 -m venv venv
-source venv/bin/activate
-python3 -m pip install --upgrade pip
-pip install -e .
+sudo apt install pipx -y
+pipx ensurepath
+source ~/.bashrc
+pipx install git+https://github.com/snietOFF/AIR-Artificial-Intelligence-Resident.git
 ```
 Launch AIR
 ```bash

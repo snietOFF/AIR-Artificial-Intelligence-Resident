@@ -1,3 +1,16 @@
+import sys, os
+# Автоматически активировать виртуальное окружение, если оно не активно
+if not sys.prefix.endswith("venv") and "VIRTUAL_ENV" not in os.environ:
+    # Ищем папку venv относительно расположения air (обычно .../venv/bin/air)
+    air_bin_dir = os.path.dirname(os.path.abspath(sys.argv[0]))
+    venv_dir = os.path.normpath(os.path.join(air_bin_dir, "..", ".."))
+    activate_script = os.path.join(venv_dir, "bin", "activate_this.py")
+    if os.path.exists(activate_script):
+        with open(activate_script) as f_act:
+            exec(f_act.read(), dict(__file__=activate_script))
+        # Перезапускаем air внутри venv
+        os.execv(sys.executable, [sys.executable] + sys.argv)
+
 import json
 import os
 import re

@@ -1,0 +1,8 @@
+assistant-output-color: blue
+user-input-color: blue
+tool-output-color: blue
+tool-error-color: red
+tool-warning-color: yellow
+show-model-warnings: false
+check-update: false
+show-release-notes: false

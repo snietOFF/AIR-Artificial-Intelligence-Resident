@@ -111,7 +111,7 @@ air --model ollama/qwen2.5:7b
 ```
 You will enter interactive mode and can start typing requests.
 
----
+
 
 
 

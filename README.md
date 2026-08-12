@@ -52,7 +52,8 @@ Create a virtual environment and install dependencies
 
 python3 -m venv venv
 source venv/bin/activate
-pip install -e .
+python -m ensurepip --upgrade
+pip install -e 
 ```
 Launch AIR
 ```bash

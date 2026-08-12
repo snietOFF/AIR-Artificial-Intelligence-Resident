@@ -114,14 +114,5 @@ You will enter interactive mode and can start typing requests.
 ---
 
 
-Default Configuration (Optional)
 
-To avoid specifying the model every time, create a file ~/.air.conf.yml with the following content:
-```yaml
-
-model: ollama/qwen2.5:7b
-check-update: false
-show-model-warnings: false
-```
-Now the ```air``` command will automatically use this model.
 
